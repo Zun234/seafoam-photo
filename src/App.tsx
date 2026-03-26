@@ -147,26 +147,20 @@ const Pricing = () => (
       <p className="text-xl font-serif italic">Chọn gói chụp phù hợp với cá tính của bạn</p>
     </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
       {[
         {
-          name: "Vibe",
-          price: "500.000 VNĐ",
-          desc: "Dành cho các bạn muốn có bộ ảnh nhanh, bắt trọn khoảnh khắc tự nhiên.",
-          features: ["1 giờ chụp", "1 concept đơn giản", "15 ảnh chỉnh sửa", "Toàn bộ ảnh gốc", "Giao ảnh trong 3 ngày"]
+          name: "Cá Nhân",
+          price: "200.000 VNĐ",
+          desc: "Photo Bọt Biển siêu hướng ngoại, hỗ trợ takecare và hướng dẫn tạo dáng. Chụp quanh Hà Nội.",
+          features: ["Thời gian: 2-3 tiếng/buổi", "Makeup cơ bản: +120.000 VNĐ", "Thiết bị: Canon RP + 50mm 1.8STM", "Địa điểm: Hà Nội (Thống Nhất, Bách Thảo...)", "Chưa bao gồm phí di chuyển/vé vào cửa"]
         },
         {
-          name: "Standard",
-          price: "1.200.000 VNĐ",
-          desc: "Gói chụp phổ biến nhất, cân bằng giữa chất lượng và chi phí.",
-          features: ["2 giờ chụp", "2 concept tự chọn", "30 ảnh chỉnh sửa", "Toàn bộ ảnh gốc", "Hỗ trợ makeup nhẹ", "Giao ảnh trong 5 ngày"],
+          name: "Couple",
+          price: "400.000 VNĐ",
+          desc: "Lưu giữ khoảnh khắc đôi lứa. Photo siêu hướng ngoại, nhiệt tình.",
+          features: ["Thời gian: 2-3 tiếng/buổi", "Hỗ trợ tạo dáng couple", "Thiết bị: Canon RP + 50mm 1.8STM", "Địa điểm: Hà Nội (Thống Nhất, Bách Thảo...)", "Chưa bao gồm phí di chuyển/vé vào cửa"],
           popular: true
-        },
-        {
-          name: "Premium",
-          price: "2.500.000 VNĐ",
-          desc: "Trải nghiệm nhiếp ảnh cao cấp với sự đầu tư kỹ lưỡng về concept và hậu kỳ.",
-          features: ["4 giờ chụp", "Không giới hạn concept", "60 ảnh chỉnh sửa", "Toàn bộ ảnh gốc", "Makeup & Làm tóc chuyên nghiệp", "Giao ảnh trong 7 ngày", "Tặng kèm 1 photobook mini"]
         }
       ].map((pkg, i) => (
         <motion.div 
@@ -225,12 +219,12 @@ const Pricing = () => (
         </div>
         <div className="bg-brand-ink text-brand-bg p-8 brutal-border border-brand-bg">
           <Calendar size={48} className="mb-6 text-brand-accent" />
-          <h3 className="text-2xl font-black uppercase mb-4">Lưu ý quan trọng</h3>
+          <h3 className="text-2xl font-black uppercase mb-4">Lưu ý từ Photo</h3>
           <ul className="space-y-4 text-sm opacity-80">
-            <li>• Vui lòng đặt lịch trước ít nhất 3-5 ngày.</li>
-            <li>• Đặt cọc 30% giá trị gói chụp để xác nhận lịch.</li>
-            <li>• Hỗ trợ dời lịch 01 lần miễn phí trước 48h.</li>
-            <li>• Giá trên chưa bao gồm phí thuê studio hoặc vé vào cổng (nếu có).</li>
+            <li>• <strong>Địa điểm:</strong> Tuỳ yêu cầu. "Chỗ ruột" là Công viên Thống Nhất (đủ góc), hoặc Bách Thảo (hơi tối do nhiều cây).</li>
+            <li>• <strong>Phí phát sinh:</strong> Phí di chuyển, vé vào cửa... sẽ trao đổi lại sau.</li>
+            <li>• <strong>Thiết bị:</strong> Canon RP + Lens 50mm 1.8STM.</li>
+            <li>• Inbox ngay để chốt lịch nhé ạ!</li>
           </ul>
         </div>
       </div>
